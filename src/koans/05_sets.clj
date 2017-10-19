@@ -10,7 +10,7 @@
   (= 3 (count #{1 2 3}))
 
   "Remember that a set is a *mathematical* set"
-  (=  1 2 3 4 5 (set '(1 1 2 2 3 3 4 4 5 5)))
+  (=  #{1 2 3 4 5} (set '(1 1 2 2 3 3 4 4 5 5)))
 
   "You can ask clojure for the union of two sets"
   (= #{1 2 3 4 5} (set/union #{1 2 3 4} #{2 3 5}))
